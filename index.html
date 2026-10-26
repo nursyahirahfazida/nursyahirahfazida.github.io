@@ -4,13 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Welcome</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f3ef;
+            margin: 0;
+            padding: 30px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit, minmax(220px, 1fr)
+            );
+            gap: 20px;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.03);
+            transition: 0.3s;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Hello, World!</h1>
-    <p>Welcome to my website.</p>
+    <h1>My Photo Gallery</h1>
+    <p style="text-align: center;">
+        Welcome to my little corner of the internet.
+    </p>
+
+    <div class="gallery">
+        <img src="images/photo1.jpg" alt="My first photo">
+        <img src="images/photo2.jpg" alt="My second photo">
+        <img src="images/photo3.jpg" alt="My third photo">
+    </div>
 
 </body>
 </html>
+
 
